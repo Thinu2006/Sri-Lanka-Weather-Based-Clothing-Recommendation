@@ -1,66 +1,69 @@
-# Sri-Lanka-Weather-Based-Clothing-Recommendation
+# Sri Lanka Weather-Based Clothing Recommendation System
 
-This project focuses on training a **traditional Machine Learning model** to recommend clothing based on Sri Lanka's weather patterns.  
-It uses a **Random Forest Classifier** trained on weather data, with support for synthetic data generation and feature engineering.
-
----
-
-## 🎯 Purpose
-
-- To build a **Machine Learning model** that predicts clothing recommendations for different districts in Sri Lanka using weather data.
-- Demonstrates traditional ML techniques including:
-  - Data preprocessing and feature engineering.
-  - Synthetic data generation.
-  - Model training and evaluation.
-  - Saving models and encoders for deployment.
+This project is a **Traditional Machine Learning-based Clothing Recommendation System** that suggests appropriate clothing based on **Sri Lankan weather conditions**. It uses a **Random Forest Classifier** trained on weather data to predict clothing recommendations for different climatic scenarios across Sri Lanka.
 
 ---
 
-## ⚙ Technologies Used
+## Project Overview
 
-- Python 3.x
-- pandas, numpy
-- scikit-learn
-- seaborn, matplotlib
-- streamlit
-- joblib
-- dotenv
+This system recommends clothing based on current or forecasted weather conditions in Sri Lanka using **Traditional Machine Learning** techniques. The model predicts one of several predefined clothing categories (e.g., Light Cotton Outfit, Rain Protection) considering weather attributes like temperature, precipitation, humidity, windspeed, and seasonality.
 
----
-
-## 🧪 Features
-
-- Load and preprocess real or synthetic weather data.
-- Perform feature engineering (e.g., heat index, temp range, monsoon season, etc.).
-- Generate nuanced clothing labels using weather conditions.
-- Train and evaluate a Random Forest model.
-- Save the trained model and label encoder.
-- Streamlit integration for interactive UI.
+The system is built using:
+- **Python (pandas, scikit-learn, numpy, seaborn, matplotlib)**
+- **Streamlit for the user interface**
+- **Joblib for model persistence**
+- **OpenWeather API for real-time data (optional integration)**
 
 ---
 
-## 🏗 Model Pipeline Overview
+## Technologies Used
 
-1. **Data Loading & Preprocessing**
-    - Load dataset or generate synthetic data if insufficient.
-    - Extract features and create derived columns.
-
-2. **Label Generation**
-    - Generate clothing labels based on temperature, rainfall, humidity, etc.
-    - Introduce realistic noise and variation.
-
-3. **Model Training**
-    - Encode labels.
-    - Train-test split with stratification.
-    - Train Random Forest Classifier.
-    - Evaluate using classification report, confusion matrix, cross-validation.
-
-4. **Model Saving**
-    - Save trained model (`.pkl` file).
-    - Save label encoder.
+- Python 
+- pandas
+- numpy
+- scikit-learn (Random Forest Classifier, LabelEncoder, cross-validation)
+- matplotlib & seaborn (visualizations)
+- streamlit (web application)
+- joblib (model persistence)
+- dotenv (environment variable handling)
+- OpenWeather API (live weather integration)
 
 ---
 
+## Features
+
+- Weather-based clothing recommendation
+- Sri Lanka-specific weather data
+- Synthetic data generation if dataset is missing or small
+- Model training with evaluation (Accuracy, Confusion Matrix, Classification Report)
+- Streamlit web UI to interact with the model and get clothing recommendations
+
+---
+
+## Dataset
+
+The system uses a weather dataset (`SriLanka_Weather_Dataset.csv`) containing historical weather data for Sri Lanka. The dataset includes:
+- Temperature (Mean, Min, Max)
+- Apparent temperature
+- Precipitation
+- Windspeed
+- Humidity
+- Month (derived from time column)
+
+If the dataset is missing or too small, the system generates **realistic synthetic data** simulating Sri Lanka's climate.
+
+Link: https://www.kaggle.com/datasets/rasulmah/sri-lanka-weather-dataset
+
+---
+
+## Model
+
+- **Algorithm:** Random Forest Classifier (Traditional ML)
+- **Features:** Engineered from weather data (e.g., temperature range, heat index, is rainy, is humid)
+- **Target:** Clothing category (5 predefined categories)
+- **Evaluation:** Accuracy, Classification Report, Confusion Matrix, Cross-Validation Score
+
+---
 
 ## 📜 License
 
