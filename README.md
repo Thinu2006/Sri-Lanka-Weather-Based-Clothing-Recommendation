@@ -2,7 +2,6 @@
 
 This project is a **Traditional Machine Learning-based Clothing Recommendation System** that suggests appropriate clothing based on **Sri Lankan weather conditions**. It uses a **Random Forest Classifier** trained on weather data to predict clothing recommendations for different climatic scenarios across Sri Lanka.
 
----
 
 ## Project Overview
 
@@ -14,7 +13,6 @@ The system is built using:
 - **Joblib for model persistence**
 - **OpenWeather API for real-time data (optional integration)**
 
----
 
 ## Technologies Used
 
@@ -28,7 +26,6 @@ The system is built using:
 - dotenv (environment variable handling)
 - OpenWeather API (live weather integration)
 
----
 
 ## Features
 
@@ -38,7 +35,6 @@ The system is built using:
 - Model training with evaluation (Accuracy, Confusion Matrix, Classification Report)
 - Streamlit web UI to interact with the model and get clothing recommendations
 
----
 
 ## Dataset
 
@@ -54,7 +50,6 @@ If the dataset is missing or too small, the system generates **realistic synthet
 
 Link: https://www.kaggle.com/datasets/rasulmah/sri-lanka-weather-dataset
 
----
 
 ## Model
 
@@ -63,7 +58,6 @@ Link: https://www.kaggle.com/datasets/rasulmah/sri-lanka-weather-dataset
 - **Target:** Clothing category (5 predefined categories)
 - **Evaluation:** Accuracy, Classification Report, Confusion Matrix, Cross-Validation Score
 
----
 
 ## 📜 License
 
